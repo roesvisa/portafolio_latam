@@ -21,11 +21,24 @@ h3 {
   background-color: #138496;
 }
 
+#mis_trabajos{
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
 .text-white {
   color: white;
 }
 #mi_foto{
   height: 830px;
+}
+
+#sobre_mi{
+  margin-top: 17em;
+}
+
+#contacto{
+  padding-top: 5rem;
 }
 
 .nav-lg{
@@ -38,7 +51,7 @@ h3 {
 
 .title-wrap{
   position: relative;
-  top: -335px;
+  top: -520px;
 }
 
 .title-wrap h1{
@@ -64,5 +77,35 @@ h3 {
 }
 
 .texto-about-me{
-  padding: 6rem;
+  padding: 10rem;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+@media (min-width: 320px) and (max-width: 500px ) {
+  #mi_foto {
+    height: 200px;
+  }
+  .title-wrap{
+    top: -66px;
+  }
+  .title-wrap h1{
+    font-size: 2em;
+  }
+  .title-wrap h2{
+    font-size: 1em;
+  }
+  .title-bkg{
+    width: 70%;
+  }
+  h3{
+    font-size: 2rem !important;
+  }
+  #mis_trabajos {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  #contacto {
+    padding-top: 2rem;
+  }
 }
