@@ -4,15 +4,17 @@ html {
 }
 
 body{
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto Condensed', sans-serif !important;
 }
 
 h1, h2{
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: initial;
 }
 
 h3 {
-  font-weight: 700 !important;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 500 !important;
+  font-size: 4rem !important;
 }
 
 #mis_trabajos, footer{
@@ -21,6 +23,9 @@ h3 {
 
 .text-white {
   color: white;
+}
+#mi_foto{
+  height: 830px;
 }
 
 .nav-lg{
@@ -31,7 +36,33 @@ h3 {
   color: white !important;
 }
 
+.title-wrap{
+  position: relative;
+  top: -335px;
+}
+
+.title-wrap h1{
+  font-size: 6em;
+  font-size: 6em;
+  opacity: 70%;
+}
+
+.title-bkg{
+  color: white;
+  background: black;
+  width: 50%;
+  margin: auto;
+}
+
+.title-wrap h2{
+  font-size: 5rem;
+}
+
 .footer-icon::before{
   font-size: 50px;
   margin-left: 5%;
+}
+
+.texto-about-me{
+  padding: 6rem;
 }

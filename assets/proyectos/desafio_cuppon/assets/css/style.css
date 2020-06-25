@@ -1,0 +1,68 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.logo{
+  width: 86px;
+  height: 25px;
+}
+
+.card-body p:last-of-type span{
+  color: #28A745;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 1rem;
+}
+
+.card-text {
+  margin-bottom: 0rem
+}
+
+nav{
+  position: fixed !important;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+
+@media screen and (min-width: 320px){
+  .container{
+    margin-top: 70px;
+  }
+}
+
+.card-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h4{
+  color: #212529;
+}
+
+h5{
+  color: #212529;
+}
+
+footer img{
+  height: 24px;
+  margin: 24px 0 10px 0;
+}
+
+footer{
+  color: #707070 !important;
+}
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+
+*/
