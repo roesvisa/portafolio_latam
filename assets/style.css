@@ -1,3 +1,37 @@
-/* font-family: 'Balsamiq Sans', cursive;
 
-font-family: 'Roboto', sans-serif; */
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Roboto', sans-serif !important;
+}
+
+h1, h2{
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+h3 {
+  font-weight: 700 !important;
+}
+
+#mis_trabajos, footer{
+  background-color: #138496;
+}
+
+.text-white {
+  color: white;
+}
+
+.nav-lg{
+  background-color: black;
+}
+
+.nav-lg a{
+  color: white !important;
+}
+
+.footer-icon::before{
+  font-size: 50px;
+  margin-left: 5%;
+}

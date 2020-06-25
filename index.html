@@ -13,25 +13,56 @@
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid pl-0 pr-0">
     <!-- Navar -->
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active" href="#mi_foto">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#sobre_mi">Sobre mí</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#mi_experiencia">Experiencia</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#mis_trabajos">Portafolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contacto">Contacto</a>
-      </li>
-    </ul>
+    <div class="d-none d-lg-block">
+      <ul class="nav nav-lg justify-content-end pt-3 pb-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="#mi_foto">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre_mi">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mi_experiencia">Experiencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mis_trabajos">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+    <!-- nav mobile -->
+    <div class="d-block d-md-none mb-4">
+      <div class="fixed-top">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="nav-lg p-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#mi_foto">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre_mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mi_experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mis_trabajos">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark nav-lg">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    </div>
     <!-- seccion mi foto/ carrousel -->
     <section id="mi_foto">
       <div class="row">
@@ -51,16 +82,20 @@
         </div>
         </div>
       </div>
-      <div class="row">
-        <h3>Titulo</h3>
-        <h4>subtitulo</h4>
+      <div class="row justify-content-center pt-3 pb-3">
+        <div class="d-block text-center">
+          <h1>Rodrigo Vilches</h1>
+          <h2>UX Designer</h2>
+        </div>
       </div>
     </section>
     <!-- seccion sobre mi/ responsivo solo lg -->
     <section id="sobre_mi" class="d-none d-lg-block">
-      <div class="row">
-        <h3>Titulo</h3>
-        <h4>subtitulo</h4>
+      <div class="row justify-content-center">
+        <div class="d-block text-center pt-3 pb-3">
+          <h3>Sobre Mí</h3>
+          <h4>Un poco de mi vida</h4>
+        </div>
       </div>
       <div class="row">
         <div class="col-6">
@@ -73,70 +108,56 @@
     </section>
     <!-- seccion mi experiencia / collapse -->
     <section id="mi_experiencia">
-      <div class="row">
-        <h3>Titulo</h3>
-        <h4>subtitulo</h4>
+      <div class="row justify-content-center">
+        <div class="d-block text-center pt-3 pb-3">
+          <h3>Mí Experiencia</h3>
+          <h4>Mis últimos empleos</h4>
+        </div>
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <img src="..." class="d-block w-100" alt="...">
-          <p>Nombre</p>
-          <p>Fecha 12-03-1991</p>
+          <div class="w-75 ml-auto mr-auto mb-3 mt-2 text-center">
+            <img src="..." class="d-block w-100" alt="...">
+            <p>Nombre</p>
+            <p>Fecha 12-03-1991</p>
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#trabajo_1" aria-expanded="false" aria-controls="trabajo_1">
+              Leer más...
+            </button>
+            <div class="collapse" id="trabajo_1">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <img src="..." class="d-block w-100" alt="...">
-          <p>Nombre</p>
-          <p>Fecha 12-03-1991</p>
+          <div class="w-75 ml-auto mr-auto mb-3 mt-2 text-center">
+            <img src="..." class="d-block w-100" alt="...">
+            <p>Nombre</p>
+            <p>Fecha 12-03-1991</p>
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#trabajo_2" aria-expanded="false" aria-controls="trabajo_2">
+              Leer más...
+            </button>
+            <div class="collapse" id="trabajo_2">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- seccion portafolio/ tooltip /card/ btn -->
     <section id="mis_trabajos">
-      <div class="row">
-        <h3>Titulo</h3>
-        <h4>subtitulo</h4>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" role="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Abrir pestaña con Demo">
-                Demo
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" role="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Abrir pestaña con Demo">
-                Demo
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" role="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Abrir pestaña con Demo">
-                Demo
-              </a>
-            </div>
-          </div>
+      <div class="row justify-content-center">
+        <div class="d-block text-center text-white pt-3 pb-3">
+          <h3>Portafolio</h3>
+          <h4>Mis trabajos de desarrollo</h4>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-4">
-          <div class="card" style="width: 18rem;">
+          <div class="card ml-auto mr-auto mb-3 mt-2" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -148,7 +169,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-4">
-          <div class="card" style="width: 18rem;">
+          <div class="card ml-auto mr-auto mb-3 mt-2" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -160,7 +181,45 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-4">
-          <div class="card" style="width: 18rem;">
+          <div class="card ml-auto mr-auto mb-3 mt-2" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" role="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Abrir pestaña con Demo">
+                Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="card ml-auto mr-auto mb-3 mt-2" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" role="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Abrir pestaña con Demo">
+                Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card ml-auto mr-auto mb-3 mt-2" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" role="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Abrir pestaña con Demo">
+                Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card ml-auto mr-auto mb-3 mt-2" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -175,23 +234,28 @@
     </section>
     <!-- seccion formulario de contacto -->
     <section id="contacto">
-      <div class="row">
-        <h3>Titulo</h3>
-        <h4>subtitulo</h4>
+      <div class="row justify-content-center">
+        <div class="d-block text-center pt-3 pb-3">
+          <h3>Contacto</h3>
+          <h4>Envíame un mensaje!</h4>
+        </div>
       </div>
     </section>
     <!-- Footer -->
     <footer>
-      <div class="row">
+      <div class="row text-white pt-3 pb-3">
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <h3>Titulo</h3>
-          <h4>subtitulo</h4>
+          <div class="row justify-content-center">
+            <h1>@Roesvisa</h1>
+          </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <i class="fab fa-github-square"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-facebook-square"></i>
+          <div class="row justify-content-center">
+            <i class="footer-icon fab fa-github-square pl-2"></i>
+            <i class="footer-icon fab fa-linkedin pl-2"></i>
+            <i class="footer-icon fab fa-instagram pl-2"></i>
+            <i class="footer-icon fab fa-facebook-square pl-2"></i>
+          </div>
         </div>
       </div>
     </footer>
